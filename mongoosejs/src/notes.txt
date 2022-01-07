@@ -1,0 +1,11 @@
+for making and switching in Database :- use <Database name >
+for show all Database :- show dbs
+creating collection and one document :- db.<Collection name>.insertOne({key:"value",....,})
+current active database :- db
+showing collection of the database :- show collections
+for getting documents for the collection: - db.<Collection name>.find() or db.<Collection name>.find().pretty()
+Read(Query):- db.<Collection name>.find({key:"value"},{key:1})
+no of document :- db.<Collection name>.find().limit(1) 
+update :- db.<Collection name>.updateOne({name : "javascript"},{$set: {type:"full stack"}})
+delete particular document :- db.<Collection name>.deleteMany({key:"value"})
+delete collection : db.<Collection name>.deleteMany({})
